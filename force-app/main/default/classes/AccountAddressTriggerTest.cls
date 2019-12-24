@@ -8,6 +8,7 @@
          acc.BillingPostalCode='testing2';
           acc.Match_Billing_Address__c =true;
          
+         
          insert acc;
         // System.assertEquals(acc.ShippingPostalCode, 'BillingPostalCode');
         // update acc;
