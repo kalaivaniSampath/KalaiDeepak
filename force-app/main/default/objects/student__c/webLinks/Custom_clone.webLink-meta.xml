@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_clone</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Custom clone</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!student__c.Id}//e?clone=1&amp;retURL=%2Fa0A7F000007wiy5&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T0MweE1DMHdObFF4T1Rvd05Ub3hNQzR6TXpoYSx3aTZzeUZ1Yzl4UEt2dVNiQzdSRWowLE5EaG1NVE5r&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa0A7F000007wiy5%2Fe</url>
+</WebLink>

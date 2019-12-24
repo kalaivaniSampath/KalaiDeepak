@@ -1,0 +1,20 @@
+<apex:page showheader="false" sidebar="false">
+<apex:form >
+    <apex:commandlink styleClass="cButtons" value="Print" reRender="dummy" onclick="printMyPartialPage();"/>
+    adfas<br/>
+    asdfs<br/>
+    asdfasdfasdfasdf<br/>
+
+    asdfasdfasdfasdfasd <br/>
+
+</apex:form>
+<apex:includeScript value="https://code.jquery.com/jquery-2.2.0.min.js"/>
+
+<Script>
+    function printMyPartialPage(){
+        $('.cButtons').hide();
+        window.print();    
+    }
+</script>
+
+</apex:page>

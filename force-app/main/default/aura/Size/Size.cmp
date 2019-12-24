@@ -1,0 +1,54 @@
+<aura:component >
+    fsdfsd
+    
+     <div class="slds-size_small">
+    <lightning:input label="size_small" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div>  <br/>
+   <div class="slds-size_full">
+    <lightning:input label="size_full" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div>  <br/>
+    
+  <div class="slds-size_1-of-1">
+    <lightning:input label="size_1-of-1" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div>  <br/> 
+ <div class="slds-size_1-of-2">
+    <lightning:input label="size_1-of-2" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div> 
+  <br/>
+  <div class="slds-size_1-of-3">
+    <lightning:input label="size_1-of-3" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div>
+  <br/>
+   <div class="slds-size_1-of-4">
+    <lightning:input label="size_1-of-4" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+   <div class="slds-size_1-of-5">
+    <lightning:input label="1-of-5" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+   <div class="slds-size_1-of-6">
+    <lightning:input label="size_1-of-6" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-7">
+    <lightning:input label="size_2-of-7" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-8">
+    <lightning:input label="size_2-of-8" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-9">
+    <lightning:input label="size_2-of-9" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-10">
+    <lightning:input label="size_2-of-10" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-11">
+    <lightning:input label="size_2-of-11" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-12">
+    <lightning:input label="size_2-of-12" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+  <div class="slds-size_2-of-2">
+    <lightning:input label="size_2-of-2" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+  </div><br/>
+
+	
+</aura:component>

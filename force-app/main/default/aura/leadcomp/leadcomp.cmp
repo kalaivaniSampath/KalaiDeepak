@@ -1,0 +1,17 @@
+<aura:component controller="creatlead">
+    <h1> welcome to Lead record creation component</h1>
+    <aura:attribute name="objnewlead" type="Lead" default="{'SobjectType':'Lead',
+                         'FirstName':'',
+                         'LastName':'',
+                         'Email':'', 
+                         'Phone':''
+                       }"/>
+    <div class="row">
+  		        <lightning:input label="First Name" name="fn" value="{!v.objnewlead.Name}" required="true"/>
+                <lightning:input label="Last Name" name="ln" value="{!v.objnewlead.LastName}" required="true"/>
+                <lightning:input label="Email" name="e" value="{!v.objnewlead.email}" required="true"/>
+ 				<lightning:input label="phone" name="p" value="{!v.objnewlead.phone}" required="true"/>
+				<lightning:button label="Create new lead create" class="slds-m-top--medium" variant="brand" onclick="{!c.createlead}"/>    
+            
+    </div>
+</aura:component>

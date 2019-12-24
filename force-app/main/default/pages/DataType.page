@@ -1,0 +1,129 @@
+<apex:page controller="DataTypeController">
+  
+   <apex:form >
+   <table align="center" border="1">
+          <tr>
+             <td colspan="3" align="center">
+                  List of Data Types
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 String 
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!firstname}
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Integer 
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!lint}
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Boolean
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!availability}
+             </td>
+         </tr>
+          <tr>
+             <td>
+                 Lead record id
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!leadid}
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 long
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!l}
+             </td>
+         </tr>
+          <tr>
+             <td>
+                 Date
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!d}
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Date Time
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!dt}
+             </td>
+         </tr>
+         <tr>
+             <td>
+                Decimal
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!deci}
+             </td>
+         </tr>
+          <tr>
+             <td>
+                Doule
+             </td>
+             
+             <td>
+                 :
+             </td>
+             
+             <td>
+                 {!doub}
+             </td>
+         </tr>
+     </table>
+   </apex:form>
+</apex:page>

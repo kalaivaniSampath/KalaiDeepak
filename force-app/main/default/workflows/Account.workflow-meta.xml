@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>process_builder_email_alert</fullName>
+        <description>process builder email alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>kalai@deepak.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kalai@sf.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Testing_template/text_email</template>
+    </alerts>
+</Workflow>

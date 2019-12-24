@@ -1,0 +1,15 @@
+<apex:page sidebar="false" readOnly="true">
+    <apex:form >
+        <style>
+        h1 {
+            color: green;
+            text-align: center;
+            }
+        </style>
+                    <h1>header tag</h1><br/>
+                    <h2>header tag</h2><br/>
+                    <h3>header tag</h3><br/>
+                    <h4>header tag</h4><br/>
+    </apex:form>
+ 
+</apex:page>

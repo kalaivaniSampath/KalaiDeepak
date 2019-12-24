@@ -1,0 +1,36 @@
+<aura:component >
+   
+    <div>  
+        
+        <h1 class="slds-text-heading_large">All the slds text formate</h1>
+        <h1 class="slds-text-heading_small">slds text heading small</h1>
+        <h1 class="slds-text-heading_large">slds text heading large</h1>
+        <h1 class="slds-text-body_regular">slds text body regular</h1>
+        <h1 class="slds-text-link_reset">slds text link reset</h1>
+        <h1 class="slds-text-link">slds text link</h1>
+        <h1 class="slds-text-link_faux">slds text link faux</h1>
+        <h1 class="slds-text-body_regular">slds text body regular</h1>
+        <h1 class="slds-text-body_small">slds text body small</h1>
+        <h1 class="slds-text-heading_large">slds text heading large</h1>
+        <h1 class="slds-text-heading_medium">slds text heading medium</h1>
+        <h1 class="slds-text-heading_small">slds text heading small</h1>
+        <h1 class="slds-text-title_caps">slds text title caps</h1>
+        <h1 class="slds-text-title_bold">slds text title bold</h1>
+        <h1 class="slds-text-color_default">slds text color default</h1>
+        <h1 class="slds-text-color_weak">slds text color weak</h1>
+        <h1 class="slds-text-color_error">slds text color error</h1>
+        <h1 class="slds-text-color_destructive">slds text color destructive</h1>
+         <h1 class="slds-text-color_success">slds text color success</h1>
+         <h1 class="slds-text-color_inverse">slds text color inverse</h1>
+         <h1 class="slds-text-color_inverse-weak">slds text color inverse weak</h1>
+         <h1 class="slds-text-align_left">slds text align left</h1>
+        <h1 class="slds-text-align_center">slds text align center</h1>
+        <h1 class="slds-text-align_right">slds text align right</h1>
+        <h1 class="slds-text-longform">slds text longform</h1>
+        <h1 class="slds-text-font_monospace">slds text font monospace</h1>
+        
+       </div>
+    
+    
+	
+</aura:component>

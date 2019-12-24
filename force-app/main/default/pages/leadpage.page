@@ -1,0 +1,63 @@
+<apex:page standardController="Lead" extensions="campaincontroller" > 
+   
+  <apex:form >
+  <apex:sectionHeader title="Lead Edit" subtitle="New Lead"  help="/apex/test" />
+      <apex:pageblock title="Lead edit">
+          <apex:pageblockButtons >
+               <apex:commandButton value="Save" action="{!save}"/>          
+               <apex:commandButton value="Cancel" action="{!cancel}"/>
+               <apex:commandButton value="New" action="{!Create}"/>
+               <apex:commandButton value="edit" action="{!edit}"/>           
+           </apex:pageblockButtons>
+          <apex:pageBlockSection title="Lead Information" columns="2">
+                  
+               <apex:inputField value="{!lead.FirstName}"/>   
+               <apex:inputField value="{!lead.Lastname}"/>   
+               <apex:inputField value="{!lead.Salutation}"/>   
+               <apex:inputField value="{!lead.Company}"/>   
+               <apex:inputField value="{!lead.Title}"/>   
+               <apex:inputField value="{!lead.LeadSource}"/>   
+               <apex:inputField value="{!campmem.CampaignID}"/>  
+               <apex:inputField value="{!lead.Industry}"/>   
+               <apex:inputField value="{!lead.AnnualRevenue}"/>
+               <apex:inputField value="{!lead.phone}"/>
+               <apex:inputField value="{!lead.MobilePhone}"/>
+               <apex:inputField value="{!lead.fax}"/>
+               <apex:inputField value="{!lead.email}"/>  
+               <apex:inputField value="{!lead.Website}"/>
+               <apex:inputField value="{!lead.Status}"/>
+              <apex:inputField value="{!lead.Rating}"/>
+               <apex:inputField value="{!lead.NumberOfEmployees}"/>          
+            </apex:pageBlockSection>
+           <apex:pageBlockSection title="Address Information" columns="1">
+               <apex:inputField value="{!lead.Street}"/>
+                <apex:inputField value="{!lead.City}"/>
+                 <apex:inputField value="{!lead.State}"/>
+                  <apex:inputField value="{!lead.PostalCode}"/>
+                   <apex:inputField value="{!lead.country}"/>           
+           </apex:pageBlockSection> 
+           <apex:pageBlockSection title="Additional Information">
+               <apex:inputField value="{!lead.ProductInterest__c}"/>
+                <apex:inputField value="{!lead.CurrentGenerators__c}"/>
+                 <apex:inputField value="{!lead.SICCode__c}"/>
+                  <apex:inputField value="{!lead.NumberofLocations__c}"/>                              
+           </apex:pageBlockSection> 
+           <apex:pageBlockSection title="Description Information">
+               <apex:inputField value="{!lead.Description}"/>                                          
+           </apex:pageBlockSection> 
+          <apex:pageblockSection title="option">
+          
+              <apex:pageBlockSectionItem >
+                  <apex:inputcheckbox value="{!lead.HasOptedOutOfEmail}"/>
+              
+              </apex:pageBlockSectionItem>
+              
+          </apex:pageblockSection>
+      
+      </apex:pageblock>
+  
+  
+  </apex:Form> 
+   
+   
+</apex:page>

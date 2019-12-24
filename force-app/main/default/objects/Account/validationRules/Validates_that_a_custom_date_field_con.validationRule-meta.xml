@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validates_that_a_custom_date_field_con</fullName>
+    <active>false</active>
+    <errorConditionFormula>YEAR( D_O_B__c ) &lt;&gt;  YEAR( TODAY() )</errorConditionFormula>
+    <errorMessage>Date must be in the current year.</errorMessage>
+</ValidationRule>

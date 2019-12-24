@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="map" type="map"/>
+    <li>The recent Account record</li>
+        <ul>
+        <aura:iteration items="{v.map.RecentAccounts}" var="acc">
+          <li type="dice">  Account Name:{!acc.name}</li>
+            <hr/>
+         </aura:iteration>
+        </ul>
+    
+  
+    
+    
+</aura:component>

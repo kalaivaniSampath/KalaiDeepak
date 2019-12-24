@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Name_Validatio</fullName>
+    <active>true</active>
+    <errorConditionFormula>Company =&quot;Test Company&quot;</errorConditionFormula>
+    <errorDisplayField>Company</errorDisplayField>
+    <errorMessage>Company Name can&#39;t be &quot;Test Company&quot;</errorMessage>
+</ValidationRule>

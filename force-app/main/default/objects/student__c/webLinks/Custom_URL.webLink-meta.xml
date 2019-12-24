@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_URL</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Custom URL</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://www.google.com/search?safe=active&amp;ei=fQm1W59pjcfBAvXlv_AD&amp;q={!student__c.Name}&amp;oq=ka&amp;gs_l=psy-ab.1.0.35i39k1l2j0i131k1l2j0j0i131k1l2j0l2j0i3k1.25163.25682.0.27097.2.2.0.0.0.0.63.120.2.2.0....0...1c.1.64.psy-ab..0.2.120....0.rmPZK3HkbSM</url>
+</WebLink>

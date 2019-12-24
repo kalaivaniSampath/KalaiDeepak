@@ -1,0 +1,74 @@
+<apex:page cache="false" showHeader="false" sidebar="false" applyHtmlTag="false" standardStylesheets="false" >
+  <head>
+  <c:HeaderComponent ></c:HeaderComponent>
+  </head>
+   <body>
+        
+        <c:TopHeaderComponent noShare="true" donateButton="true"></c:TopHeaderComponent>
+        <main class="padding-remove-top">
+        <div>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="{!$Resource.bannerImage001}" alt="this is a placeholder"/>
+                </div>
+            </div>
+            <section class="section padding-add-top-double padding-add-bottom-double">
+                <div class="row container center-align">
+                    <div class="col s12 m10 push-m1">
+                        <h2 class="h5">{!$Label.HomeHead1}</h2>
+                        <p class="grey-text text-darken-3 lighten-3">{!$Label.HomeHead1}</p>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="{!$Resource.bannerImage001}" alt="this is a placeholder"/>
+                </div>
+            </div>
+            <section class="section padding-add-top-double padding-add-bottom-double">
+                <div class="row container center-align">
+                    <div class="col s12 m10 push-m1">
+                        <h2 class="h5">{!$Label.HomeHead1} </h2>
+                        <p class="grey-text text-darken-3 lighten-3">{!$Label.HomeHead1}</p>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="{!$Resource.bannerImage001}" alt="this is a placeholder"/>
+                </div>
+            </div>
+            <section class="section padding-add-top-double padding-add-bottom-double">
+                <div class="row container center-align">
+                    <div class="col s12 m10 push-m1">
+                        <h2 class="h5">{!$Label.HomeHead1}</h2>
+                        <p class="grey-text text-darken-3 lighten-3">{!$Label.HomeHead1}</p>
+                    </div>
+                </div>
+            </section>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="{!$Resource.bannerImage001}" alt="this is a placeholder"/>
+                </div>
+            </div>
+            <section class="section padding-add-top-double padding-add-bottom-double">
+                <div class="row container center-align">
+                    <div class="col s12 m10 push-m1">
+                        <h2 class="h5">{!$Label.HomeHead1}</h2>
+                        <p class="grey-text text-darken-3 lighten-3">{!$Label.HomeHead1}</p>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="section padding-add-top-double padding-add-bottom-double">
+                <div class="row container center-align">
+                    <div class="col s12 m6 push-m3 l4 push-l4">
+                        <a href="/Donation?eid={!$Label.HomeHead1}" class="btn btn-emph btn-full-width waves-effect waves-light">Donate</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </main>
+        <c:FooterComponent > </c:FooterComponent>
+    </body>
+</apex:page>

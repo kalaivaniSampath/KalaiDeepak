@@ -1,0 +1,8 @@
+<apex:page controller="MathematicalOperations">
+    <apex:form id="frm">
+        <apex:inputText value="{!inputValue1}" id="theTextInput1"/>
+        <apex:inputText value="{!inputValue2}" id="theTextInput2"/>
+        <apex:outputText value="{!calculateSum}" id="sum"/>
+       <apex:commandbutton action="{!calcuateSum}" value="Calculate Sum" rerender="frm"/>
+    </apex:form>
+</apex:page>

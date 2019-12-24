@@ -1,0 +1,5 @@
+<apex:page docType="html-5.0" controller="addmethod">
+    <apex:form >
+     
+    </apex:form>
+</apex:page>

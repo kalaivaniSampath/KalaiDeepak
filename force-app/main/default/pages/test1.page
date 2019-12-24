@@ -1,0 +1,6 @@
+<apex:page >
+    
+   <c:test myValue="testosfsfs">
+   </c:test>
+  
+</apex:page>

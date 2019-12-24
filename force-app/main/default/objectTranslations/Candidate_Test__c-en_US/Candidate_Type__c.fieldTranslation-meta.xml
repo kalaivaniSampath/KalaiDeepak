@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Candidate Type --></label>
+    <name>Candidate_Type__c</name>
+    <picklistValues>
+        <masterLabel>External Candidate</masterLabel>
+        <translation><!-- External Candidate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Candidate</masterLabel>
+        <translation><!-- Internal Candidate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

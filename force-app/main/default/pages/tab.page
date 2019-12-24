@@ -1,0 +1,12 @@
+<apex:page id="thePage" >
+    <apex:tabPanel switchType="Client" selectedTab="name1" contentStyle="color:red">
+        <apex:tab label="One" name="name1" id="tabone" title="First Tab">First Content tab</apex:tab>    
+        <apex:tab label="Two" name="name2" id="tabtwo" title="Second Tab">Second content tab</apex:tab>   
+        
+        
+    
+    
+    
+    </apex:tabPanel>   
+    
+</apex:page>

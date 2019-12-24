@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Employee app</label>
+    <logo>MC4SF__MailChimp_Logos/MC4SF__New_MailChimp_Logo.svg</logo>
+    <tabs>standard-AuthorizationFormText</tabs>
+    <tabs>standard-Chatter</tabs>
+</CustomApplication>

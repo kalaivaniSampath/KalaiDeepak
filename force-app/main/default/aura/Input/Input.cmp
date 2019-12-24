@@ -1,0 +1,57 @@
+<aura:component >
+      
+	<div class="slds-form-element">
+     <div >
+        <h2 class="header">Basic Input Date</h2>
+        <lightning:input type="date" name="input1" label="Enter a date" />
+        <lightning:input type="date" name="input2" label="Date field with a predefined value" value="2017-09-07"/>
+        <lightning:input type="date" name="input3" label="Date field with ISO8601 formatted value" value="2017-09-07T00:00:00Z"/>
+        <lightning:input type="date" name="input4" label="Date field with placeholder" placeholder="type here..."/>
+    </div>
+     <div class="row">
+        <h2 class="header">Advanced Input Date</h2>
+        <lightning:input type="date" name="input5" label="Required date field" required="true" value="2017-09-07" />
+        <lightning:input type="date" name="input6" label="Read-only date field" readonly="true" value="2017-09-07" />
+        <lightning:input type="date" name="input7" label="Disabled date field" disabled="true" value="2017-09-07" />
+        <lightning:input type="date" name="input8" label="Date field with min and max values" value="2017-09-07" min="2017-09-05" max="2017-09-22" />
+    </div>
+        <div class="row">
+        <h2 class="header">Basic Input Date Time</h2>
+        <lightning:input type="datetime" name="input1" label="Enter a date/time value" />
+        <lightning:input type="datetime" name="input2" label="Date Time field with a predefined value" value="2017-09-12T18:13:41Z"/>
+    </div>
+
+    <div class="row">
+        <h2 class="header">Advanced Input Date Time</h2>
+        <lightning:input type="datetime" name="input3" label="Required Date Time field" required="true" value="2017-09-12T18:13:41Z" />
+        <lightning:input type="datetime" name="input4" label="Disabled Date Time field" disabled="true" value="2017-09-12T18:13:41Z" />
+        <lightning:input type="datetime" name="input5" label="Date Time field with min and max values" value="2017-09-12T18:13:41Z" min="2017-08-03T08:20:44Z" max="2017-09-25T22:33:44Z" />
+    </div>
+    <div class="row">
+        <h2 class="header">Basic Input Time</h2>
+        <lightning:input type="time" name="input1" label="Enter a time" />
+        <lightning:input type="time" name="input2" label="Time field with a predefined value" value="18:30:00.000Z"/>
+        <lightning:input type="time" name="input3" label="Time field with placeholder" placeholder="type here..."/>
+    </div>
+
+    <div class="row">
+        <h2 class="header">Advanced Input Time</h2>
+        <lightning:input type="time" name="input4" label="Required Time field" required="true" value="18:30:00.000Z" />
+        <lightning:input type="time" name="input5" label="Disabled Time field" disabled="true" value="18:30:00.000Z" />
+        <lightning:input type="time" name="input6" label="Time field with min and max values" value="18:30:00.000Z" min="10:30:00.000Z" max="22:00:00.000Z" />
+    </div>
+       <div>
+           <lightning:input type="color" name="color" label="Favorite color"/>
+       </div>
+        <div>
+            <h2 class="header">File attachement</h2>
+            <lightning:input name="file1" type="file" label="Attachment" multiple="true" accept="image/png, .zip" onchange="{! c.handleFilesChange }"/>
+    		<lightning:input name="file2" type="file" label="Attachment(version required)" required="true" onchange="{! c.handleFilesChange }"/>
+    		<lightning:input name="file3" type="file" label="Attachment(version disabled)" disabled="true" onchange="{! c.handleFilesChange }"/> 
+       </div>
+          
+        
+	</div>
+    
+   
+</aura:component>

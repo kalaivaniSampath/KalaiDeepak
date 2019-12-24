@@ -1,0 +1,23 @@
+<apex:page standardController="Account">
+<apex:form id="theform">
+
+{!account.industry}
+
+<apex:inputField value="{!account.name}" required="true"/>
+
+<apex:actionRegion >
+
+    <apex:inputfield value="{!account.industry}"/>
+    <apex:commandButton value="click" reRender="theform"/>
+    {!now()}
+
+
+</apex:actionRegion>
+
+
+</apex:form>
+ 
+ 
+ 
+ 
+</apex:page>

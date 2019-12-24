@@ -1,0 +1,153 @@
+<apex:page controller="Bookingcontroller" lightningStylesheets="True" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    
+    <html>
+
+    <head>
+        <apex:slds />
+        <title>Welcome to booking</title>
+    </head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>
+    <body>
+        <div class="slds-scope">
+        <fieldset class="slds-form--compound">
+            <apex:form >
+            
+            <div class="slds-form-element">
+                <div class="slds-text-body_regular">
+                        <b><p align="center"> SCHOOL VISITS TO THE SERPENTINE GALLERIES SCHOOL VISIT BOOKING FORM. </p> </b><br/>
+                        <p> Please complete this <b> School Visit Booking Form </b> and return to information@serpentinegalleries.org in advance of your visit to the Serpentine Galleries. All groups must book in advance with the Visitor Services team.</p>
+                         <p>Before completing this form, please read the <b> Guidelines for your Visit </b> and <b>Risk Assessment Guidance </b> documents available at serpentinegalleries.org/schools.</p>
+                 </div>
+                 
+                      
+                <h3 class="slds-section-title--divider">Section Information</h3> 
+                                            
+                 {!$ObjectType.Booking__c.fields.Text__c.Label}
+                 <div class="slds-form-element__control">
+                    
+                    <apex:inputField styleClass="slds-input" id="numberOfEmployees" html-placeholder="Employees" value="{!Booking.Text__c}"/>
+               </div> 
+               
+                {!$ObjectType.Booking__c.fields.Checkbox__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Checkbox__c}" required="true"/>
+                </div>
+                 
+                {!$ObjectType.Booking__c.fields.Contact__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Contact__c}" required="true"/>
+                </div>  
+                
+                {!$ObjectType.Booking__c.fields.Currency__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Currency__c}" required="true" />
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Date__c.Label}
+                <div class="slds-form-element__control">                
+                    <apex:input type="date" value="{!dat}"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Date_Time__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Date_Time__c}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Email__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Email__c}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Geolocation__Latitude__s.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Geolocation__Latitude__s}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Geolocation__Longitude__s.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Geolocation__Longitude__s}" required="true"/>
+                </div> 
+                
+                  {!$ObjectType.Booking__c.fields.Geolocation__Latitude__s.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Geolocation__Latitude__s}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Number__c.Label} 
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Number__c}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Number__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Number__c}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Percent__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Percent__c}" required="true"/>
+                </div> 
+                
+                
+                {!$ObjectType.Booking__c.fields.Phone__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Phone__c}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Picklist__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Picklist__c}" required="true"/>
+                </div> 
+                {!$ObjectType.Booking__c.fields.Text_Encrypted__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Text_Encrypted__c}" required="true"/>
+                </div> 
+                
+                {!$ObjectType.Booking__c.fields.Text_Area__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Text_Area__c}" required="true"/>
+                </div>
+                
+                {!$ObjectType.Booking__c.fields.Text_Area_Long__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Text_Area_Long__c}" required="true"/>
+                </div>
+                
+                {!$ObjectType.Booking__c.fields.Text_Area_Rich__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Text_Area_Rich__c}" required="true"/>
+                </div>
+                
+                {!$ObjectType.Booking__c.fields.Time__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.Time__c}" required="true"/>
+                </div>
+                
+                {!$ObjectType.Booking__c.fields.URL__c.Label}
+                <div class="slds-form-element__control">
+                    <apex:inputfield value="{!Booking.URL__c}" required="true"/>
+                </div>
+                
+              
+                             
+            </div>
+            
+            </apex:form>
+             </fieldset>
+        </div>
+
+    </body>
+
+    </html>
+
+</apex:page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diiferent_object</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(Name== VLOOKUP( $ObjectType.Employee__c.Fields.Name ,  $ObjectType.Employee__c.Fields.Name , Name), true, false)</errorConditionFormula>
+    <errorMessage>Different Object</errorMessage>
+</ValidationRule>

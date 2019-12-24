@@ -1,0 +1,26 @@
+<apex:page standardController="Lead" extensions="customsavelead">
+   
+  <apex:form >
+      <apex:pageblock title="New Lead">
+          <apex:pageblockButtons >
+          <apex:commandButton value="Save" action="{!save}"/>          
+           <apex:commandButton value="Cancel" action="{!cancel}"/>
+           <apex:commandButton value="New" action="{!Create}"/>
+            <apex:commandButton value="delete" action="{!Delete}"/>         
+          
+          </apex:pageblockButtons>
+          <apex:pageBlockSection >
+          
+          
+          
+          
+          </apex:pageBlockSection>
+          
+      
+      </apex:pageblock>
+  
+  
+  </apex:Form> 
+   
+   
+</apex:page>

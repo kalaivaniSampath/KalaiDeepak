@@ -1,0 +1,158 @@
+<apex:page showHeader="false" controller="cls_DailyReport" standardStylesheets="true" sidebar="false" docType="html-5.0" applyBodyTag="False" applyHtmlTag="False" tabStyle="Account">
+    <apex:form >
+
+        <head>
+            <title> Daily Sales Report</title>
+            <apex:slds />
+        </head>
+
+        <body class="slds-scope">
+
+            <!-- PAGE HEADER -->
+            <div class="slds-page-header" role="banner">
+                <div class="slds-grid">
+                    <div class="slds-col slds-has-flexi-truncate">
+                        <!-- HEADING AREA -->
+                        <center>
+                            <h1 class="slds-page-header__title slds-truncate" title="My Accounts">Daily Sales Report</h1></center>
+
+                        <!-- / HEADING AREA -->
+                    </div>
+                </div>
+            </div>
+            <!-- / PAGE HEADER -->
+
+            <!-- ACCOUNT DETAIL CARD -->
+
+            <apex:pageBlock mode="details">
+                <apex:pageBlockSection columns="1">
+
+                    <apex:inputField value="{!acc.ownerid}" label="Name" />
+                    <apex:outputText value="{!user.Department}"></apex:outputText>
+                    <apex:inputfield value="{!Oppnew.CloseDate}" label="Date"/>
+                    <br/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection >
+                    <div class="slds-align--absolute-center">
+                        <apex:commandButton value="Submit" action="{!Submit}"/>
+                    </div>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection columns="1" id="nocount">
+                    <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-no-row-hover">
+                        <thead>
+                            <tr class="slds-text-heading--label">
+                                <th scope="col">Lead</th>
+                                <th scope="col">Account</th>
+                                <th scope="col">Client</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{!lcnt}</td>
+                                <td>{!acccnt}</td>
+                                <td>{!clinetCnt}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" title="List of Activity">
+                    <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-no-row-hover">
+                        <thead>
+                            <tr class="slds-text-heading--label">
+                                <th scope="col">Name</th>
+                                <th scope="col">Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Call</th>
+                                <td>{!callcnt}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td>{!emailcnt}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">In Office Meetings</th>
+                                <td>{!inofficemeetingcnt}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Out of Office Meetings</th>
+                                <td>{!outofficemeetingcnt}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Quotation</th>
+                                <td>{!quotationcnt}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Opportunity</th>
+                                <td>{!oppcnt}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pipeline</th>
+                                <td>{!pipelinecnt}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </apex:pageBlockSection>
+                <br/>
+                <apex:pageBlockSection columns="1" title="Opportuntiy Details" id="oppdetails">
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                        <thead>
+                            <tr class="slds-text-title_caps">
+                                <th scope="col">
+                                    <div class="slds-truncate">Sr #</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Account Name">Account Name</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Expected Vehicle">Expected Vehicle #</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Expected Amount">Expected Amount</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Opportunity Stage">Opportunity Stage</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Probability %">Probability %</div>
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <apex:repeat value="{!opp}" var="o">
+                            <tr>
+                                <td>
+                                    <div class="slds-truncate">{!o.Name}</div>
+                                </td>
+                                <td>
+                                    <div class="slds-truncate">{!o.Account.Name}</div>
+                                </td>
+                                <td>
+                                    <div class="slds-truncate">{!o.ExpectedRevenue}</div>
+                                </td>
+                                <td>
+                                    <div class="slds-truncate">{!o.Amount}</div>
+                                </td>
+                                <td>
+                                    <div class="slds-truncate">{!o.StageName}</div>
+                                </td>
+                                <td>
+                                    <div class="slds-truncate">{!o.Probability}</div>
+                                </td>
+                            </tr>
+                           </apex:repeat>
+                        </tbody>
+                    </table>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+
+            <!-- / ACCOUNT DETAIL CARD -->
+        </body>
+    </apex:form>
+</apex:page>

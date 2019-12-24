@@ -1,0 +1,6 @@
+<apex:page >
+ <apex:outputLink value="https://www.salesforce.com" id="thelink">www.salesforce.com
+ 
+ 
+ </apex:outputLink>
+</apex:page>

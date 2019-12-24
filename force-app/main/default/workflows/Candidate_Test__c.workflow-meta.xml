@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Send_Email</fullName>
+        <description>Send Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lancefish@test.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Testing_template/SalesNewCustomerEmail</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>External_CandidateFU</fullName>
+        <field>Candidate_Type__c</field>
+        <literalValue>External Candidate</literalValue>
+        <name>External CandidateFU</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_updateRD</fullName>
+        <field>Reference_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Field updateRD</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FinalapprovalFU</fullName>
+        <field>Not_Approved__c</field>
+        <literalValue>Approved</literalValue>
+        <name>FinalapprovalFU</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Internal_CandidateFU</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Internal_Candidate</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Internal CandidateFU</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>automatic_update</fullName>
+        <field>Not_Approved__c</field>
+        <literalValue>Approved</literalValue>
+        <name>automatic update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>candidateFU</fullName>
+        <field>Candidate_Type__c</field>
+        <literalValue>Internal Candidate</literalValue>
+        <name>candidateFU</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>External CandidateFU</fullName>
+        <actions>
+            <name>External_CandidateFU</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Candidate_Test__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>External Candidate</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Internal Candidate</fullName>
+        <actions>
+            <name>candidateFU</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Candidate_Test__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Internal Candidate</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Number of References equals</fullName>
+        <actions>
+            <name>Field_updateRD</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Candidate_Test__c.Number_of_References__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

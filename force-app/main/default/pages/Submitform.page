@@ -1,0 +1,21 @@
+<apex:page controller="SubmitFormController">
+    <script type="text/javascript">
+    function submitData() {
+        var uname = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        submitActionFunction(uname, password);
+    }
+    </script>
+    <apex:form >
+        <apex:actionFunction name="submitActionFunction" action="{!submitForm}"  reRender="actionFun">
+            <apex:param name="uname" assignTo="{!username}" value="" />
+            <apex:param name="pwd" assignTo="{!password}" value="" />
+        </apex:actionFunction>
+        <center>
+            Username: <input type="text" id="username" value=""/> <br/> <br/>
+            Password: <input type="text" id="password" value=""/> <br/> <br/>
+            <input type="button" onclick="submitData();" value="Submit From HTML Button"/> &nbsp; &nbsp;
+            <apex:commandButton value="Submit From Apex Button" onclick="submitData();" reRender="sapex"/>
+        </center>
+    </apex:form>  
+</apex:page>

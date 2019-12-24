@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Students</value>
+    </caseValues>
+    <layouts>
+        <layout>Student Layout</layout>
+        <sections>
+            <label><!-- Additional information --></label>
+            <section>Additional information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Studen Quick record creation --></label>
+        <name>Studen_Quick_record_creation</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter the address character less than 100 --></errorMessage>
+        <name>Address_length_limit_not_exist_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- IF country some value enter city and address and if country is null no need to enter city and state --></errorMessage>
+        <name>Country_null_and_not_null_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please dont enter city and address --></errorMessage>
+        <name>Country_null_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the city and State --></errorMessage>
+        <name>Country_some_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the duplicate value found in name field --></errorMessage>
+        <name>Vlookup_same_Object</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please this record is new and email is required --></errorMessage>
+        <name>create_New_record_in_student_validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Custom_URL --></label>
+        <name>Custom_URL</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Custom_clone --></label>
+        <name>Custom_clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Detail_page_link_button --></label>
+        <name>Detail_page_link_button</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Save_VFpage --></label>
+        <name>Save_VFpage</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- check student record as been created follow this record --></description>
+        <name>Meeting</name>
+        <subject><!-- Meeting --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

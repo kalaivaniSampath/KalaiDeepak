@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>number_of_reference</fullName>
+    <active>true</active>
+    <errorConditionFormula>Number_of_References__c &gt;4</errorConditionFormula>
+    <errorDisplayField>Number_of_References__c</errorDisplayField>
+    <errorMessage>Please provide the valid number</errorMessage>
+</ValidationRule>

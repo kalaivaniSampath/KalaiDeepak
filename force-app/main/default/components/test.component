@@ -1,0 +1,6 @@
+<apex:component >
+    
+ <apex:attribute name="myValue" description="description information" type="string" required="true"/>
+
+
+</apex:component>

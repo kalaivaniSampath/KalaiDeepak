@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductInterest__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GC1000 series</fullName>
+                <default>false</default>
+                <label>GC1000 series</label>
+            </value>
+            <value>
+                <fullName>GC5000 series</fullName>
+                <default>false</default>
+                <label>GC5000 series</label>
+            </value>
+            <value>
+                <fullName>GC3000 series</fullName>
+                <default>false</default>
+                <label>GC3000 series</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Agriculture</controllingFieldValue>
+            <controllingFieldValue>Apparel</controllingFieldValue>
+            <controllingFieldValue>Banking</controllingFieldValue>
+            <controllingFieldValue>Biotechnology</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>GC1000 series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apparel</controllingFieldValue>
+            <controllingFieldValue>Banking</controllingFieldValue>
+            <controllingFieldValue>Biotechnology</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>GC5000 series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banking</controllingFieldValue>
+            <controllingFieldValue>Biotechnology</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>GC3000 series</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

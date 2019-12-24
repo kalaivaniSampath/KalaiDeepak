@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Candidate Test</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Candidate Test</value>
+    </caseValues>
+    <layouts>
+        <layout>Candidate Test Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External Candidate pg</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Candidate pg</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Internal Candidate --></label>
+        <name>Internal_Candidate</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Different Object --></errorMessage>
+        <name>Diiferent_object</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Same Name already exist. --></errorMessage>
+        <name>Vlookup_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the Not function then only we can enter --></errorMessage>
+        <name>about_enquiry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the valid number --></errorMessage>
+        <name>number_of_reference</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- please enter defferent name --></errorMessage>
+        <name>same_name_two_object_exist_or_not</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- recordupdate --></label>
+        <name>recordupdate</name>
+    </webLinks>
+</CustomObjectTranslation>

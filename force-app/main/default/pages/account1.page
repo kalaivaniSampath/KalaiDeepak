@@ -1,0 +1,16 @@
+<apex:page controller="Accountcontroller" sidebar="false">
+  <apex:form >
+  <apex:pageBlock >
+  <apex:pageblockTable value="{!showList}" var="a1">
+      <apex:column headerValue="Account Name" value="{!a1.Name}"/>
+       <apex:column headerValue="ID" value="{!a1.Id}"/>
+       <apex:column headerValue="Type" value="{!a1.Type}"/>  
+  </apex:pageblockTable>
+  
+  </apex:pageBlock>
+ </apex:form>
+ 
+ 
+ 
+ 
+ </apex:page>

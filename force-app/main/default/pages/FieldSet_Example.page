@@ -1,0 +1,9 @@
+<apex:page standardController="Account">
+<apex:Form >
+    <apex:repeat value="{!$ObjectType.Account.FieldSets.Table_Field_Set}" var="field">
+        <apex:outputText value="{!field}" /><br/>
+        <apex:inputfield value="{!Account[field]}"/><br/>
+        
+    </apex:repeat>
+    </apex:Form>
+</apex:page>

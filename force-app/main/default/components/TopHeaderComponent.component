@@ -1,0 +1,33 @@
+<apex:component >
+    <apex:attribute name="noShare" type="BOOLEAN" description="" />
+        <apex:attribute name="donateButton" type="BOOLEAN" description="" />
+            
+            <header class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="row container valign-wrapper">
+                           <!-- <div class="col s4 m3">
+                                <a href="{!$Label.HomeHead1}">
+                                    <img src="{!$Resource.iconLAAHelicopter}" class="hide-on-med-and-up" alt="London Air Ambulance helicopter icon" />
+                                    <img src="{!$Resource.iconLAAHelicopterSky}" class="hide-on-small-only" alt="London Air Ambulance helicopter icon" />
+                                </a>
+                            </div>-->
+                            <div class="col s4 m6 brand-logo">
+                            <h1>Contact us </h1>
+                                <!--<a href="{!$Label.HomeHead1}">
+                                    <img src="{!$Resource.iconLAAXmasLogo}" alt="London Air Ambulance Christmas Appeal" />
+                                </a>-->
+                            </div>
+                            <div class="col s4 m3 right-align">
+                                <a href="/Donation?eid={!$Label.HomeHead1}" class="btn btn-emph  {!if(donateButton, "", "hide")}">Register Now</a>
+                                <div class=" {!if(noShare, "hide", "")}">
+                                    <a href="{!$Label.HomeHead1}" target="_blank"><img  src="{!$Resource.iconTwitterWhite}" alt="{!$Label.HomeHead1}"/></a>
+                                    <a href="{!$Label.HomeHead1}" target="_blank"><img  src="{!$Resource.iconFacebookWhite}" alt="{!$Label.HomeHead1}"/></a>
+                                    <a href="{!$Label.HomeHead1}" target="_blank"><img  src="{!$Resource.iconInstagramWhite}" alt="{!$Label.HomeHead1}"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </apex:component>

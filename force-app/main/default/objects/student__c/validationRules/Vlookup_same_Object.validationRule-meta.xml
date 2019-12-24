@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vlookup_same_Object</fullName>
+    <active>false</active>
+    <errorConditionFormula>Name==VLOOKUP(  $ObjectType.student__c.Fields.Name  ,    $ObjectType.student__c.Fields.Name ,  Name)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Please check the duplicate value found in name field</errorMessage>
+</ValidationRule>

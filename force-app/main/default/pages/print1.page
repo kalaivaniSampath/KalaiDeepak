@@ -1,0 +1,11 @@
+<apex:page >
+  <html>
+  
+  <input type="button" value="print" onclick="window.print();"/>
+  
+  
+  
+  </html>
+  
+  
+  </apex:page>

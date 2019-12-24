@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nag</value>
+    </caseValues>
+    <layouts>
+        <layout>Project Nag Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Project Nag Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>一つの親レコードが選択されている必要があります。</errorMessage>
+        <name>Must_have_a_parent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>一つの親オブジェクトだけが許可されています。例えば、プロジェクトが参照先として設定された場合はマイルストーンとタスクが空になります。</errorMessage>
+        <name>Only_one_parent_allowed</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<apex:page controller="testclass">
+<apex:Form >
+  <a href="javascript:SubmitAfterTimeOver();">Click Me</a>
+  <apex:actionFunction name="SubmitAfterTimeOver" action="{!getcountdisplay}" rendered="myblock"/>
+  
+  <apex:pageBlock id="myblock" >
+  
+  </apex:pageBlock>
+  <script>
+  SubmitAfterTimeOver();
+  </script>
+  
+  
+  </apex:form>
+  
+</apex:page>

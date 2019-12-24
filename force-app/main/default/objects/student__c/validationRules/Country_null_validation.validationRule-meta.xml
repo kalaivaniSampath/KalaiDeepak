@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_null_validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(!ISBLANK(TEXT(Country__c)) , false, IF(OR(!ISBLANK(City__c),!ISBLANK(Address__c)),true, false))</errorConditionFormula>
+    <errorMessage>Please dont enter city and address</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<apex:page standardController="student__c">
+    <form>
+    Welcome to Student page
+    </form>
+     
+</apex:page>

@@ -1,0 +1,66 @@
+<apex:page standardController="Account">
+
+<apex:includeScript value="https://www.google.com/jsapi" />
+<script type="text/javascript">
+    google.load('search', '1');
+
+    var newsSearch;
+
+    function searchComplete() {
+
+        var container = document.getElementById('anthologyGoogleNews');
+        document.getElementById('anthologyGoogleNews').innerHTML = '';
+        if (newsSearch.results && newsSearch.results.length > 0) {
+            for (var i = 0; i < newsSearch.results.length; i++) {
+                alert(newsSearch.results[i].language);
+                if (newsSearch.results[i].language == 'en') {
+
+                var p = document.createElement('p');
+                var a = document.createElement('a');
+                var h = document.createElement('h3');
+                a.href = newsSearch.results[i].unescapedUrl;
+                a.innerHTML = 
+                    newsSearch.results[i].titleNoFormatting
+                     + ' (' + newsSearch.results[i].publisher + ')';
+                a.setAttribute('target', '_blank');
+                p.innerHTML = newsSearch.results[i].content;
+
+                h.appendChild(a);
+                container.appendChild(h);
+                container.appendChild(p);
+                }
+            }
+        }
+    }
+    function onLoad() {
+        newsSearch = new google.search.NewsSearch();
+        newsSearch.setResultOrder(google.search.Search.ORDER_BY_DATE);
+        newsSearch.setResultSetSize(8);
+        newsSearch.setSearchCompleteCallback(this, searchComplete, null);
+        newsSearch.execute('{!account.name}');
+        google.search.Search.getBranding('anthologyGoogleBranding');
+    }
+    google.setOnLoadCallback(onLoad);
+</script>
+
+<style>
+    #anthologyGoogleNews h3
+     {
+        padding: 4px 4px 4px 0;
+        font-size: 1.2em;
+        width: 828px;
+        font-weight: bold;
+        color: #336;
+        }
+    #anthologyGoogleNews h3 a,
+    #anthologyGoogleNews h3 a:link,
+    #anthologyGoogleNews h3 a:visited,
+    #anthologyGoogleNews h3 a:hover,
+    #anthologyGoogleNews h3 a:active {
+        color: #336;
+        text-decoration: none;
+    }
+</style>
+<div id="anthologyGoogleBranding"></div>
+<div id="anthologyGoogleNews">Please wait whilst we load the news</div>
+</apex:page>

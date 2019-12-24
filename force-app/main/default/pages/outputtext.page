@@ -1,0 +1,11 @@
+<apex:page >
+  
+  <apex:outputText style="font-style:italic" value="This is {0} output text {1}">
+  <apex:param value="my"/>
+  <apex:param value="content value"/>
+  
+  </apex:outputText>
+  
+  
+  
+</apex:page>

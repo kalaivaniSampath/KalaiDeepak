@@ -1,0 +1,26 @@
+<apex:page controller="Sumcontroller">
+    <apex:form >
+        <apex:pageblock >
+        <apex:outputLabel >Enter the First Value: </apex:outputLabel>
+            <apex:inputtext value="{!a}" id="FirstValue" /><br/>
+            
+            <apex:outputLabel >Enter the Second Value: </apex:outputLabel>            
+            <apex:inputtext value="{!b}" /><br/>
+            
+                        <apex:outputLabel >Result: </apex:outputLabel>            
+            <apex:inputtext value="{!sum}" /><br/>
+            
+        <!-- <apex:outputText value="{!sum}" id="sum"/>-->
+           
+           <apex:pageblockbuttons >
+                <apex:commandButton action="{!calculateSum}" value="sum"/>
+                <apex:commandButton action="{!Reset}" value="Reset"/>
+           </apex:pageblockbuttons>
+           <apex:outputText value="{!out}"   />
+           
+                  
+           
+            
+        </apex:pageblock>  
+  </apex:form>   
+</apex:page>

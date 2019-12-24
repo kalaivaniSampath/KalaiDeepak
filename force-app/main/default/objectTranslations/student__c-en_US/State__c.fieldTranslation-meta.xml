@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- State --></label>
+    <name>State__c</name>
+    <picklistValues>
+        <masterLabel>IND1</masterLabel>
+        <translation><!-- IND1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IND2</masterLabel>
+        <translation><!-- IND2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IND3</masterLabel>
+        <translation><!-- IND3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK1</masterLabel>
+        <translation><!-- UK1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK2</masterLabel>
+        <translation><!-- UK2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK3</masterLabel>
+        <translation><!-- UK3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US1</masterLabel>
+        <translation><!-- US1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US2</masterLabel>
+        <translation><!-- US2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US3</masterLabel>
+        <translation><!-- US3 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

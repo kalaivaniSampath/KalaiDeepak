@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_sending</fullName>
+        <description>Email sending</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>kalai@sf.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Testing_template/Custom_Without_using_letter_head_lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_an_email_to_Employee</fullName>
+        <description>Send an email to Employee</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Testing_template/Custom_Without_using_letter_head_lead</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Field_Update</fullName>
+        <field>Status__c</field>
+        <literalValue>Open</literalValue>
+        <name>Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_Reject</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Field Update Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_Success</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Field Update Success</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upate_the_employee_name</fullName>
+        <field>Name</field>
+        <formula>&quot;Employee Name changed&quot;</formula>
+        <name>Upate the employee name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_field</fullName>
+        <field>Gender__c</field>
+        <literalValue>Male</literalValue>
+        <name>Update field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_some_filed</fullName>
+        <field>Gender__c</field>
+        <literalValue>Female</literalValue>
+        <name>Update some filed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>NextValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_the_field</fullName>
+        <description>Update the field</description>
+        <field>Gender__c</field>
+        <literalValue>Female</literalValue>
+        <name>Update the field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Outbound_message</fullName>
+        <apiVersion>45.0</apiVersion>
+        <description>Outbound message</description>
+        <endpointUrl>https://requestbin.fullcontact.com/1hzklll1</endpointUrl>
+        <fields>Contact__c</fields>
+        <fields>Country__c</fields>
+        <fields>Date_of_Birth__c</fields>
+        <fields>Description__c</fields>
+        <fields>Display_Month__c</fields>
+        <fields>Email__c</fields>
+        <fields>Gender__c</fields>
+        <fields>Id</fields>
+        <fields>Last_Name__c</fields>
+        <fields>Name</fields>
+        <fields>School_Name__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>kalai@deepak.com</integrationUser>
+        <name>Outbound message</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Outbound_message1</fullName>
+        <apiVersion>45.0</apiVersion>
+        <description>Outbound message</description>
+        <endpointUrl>https://requestbin.fullcontact.com/1msk54q1</endpointUrl>
+        <fields>ConnectionReceivedId</fields>
+        <fields>ConnectionSentId</fields>
+        <fields>Contact__c</fields>
+        <fields>Country__c</fields>
+        <fields>CreatedById</fields>
+        <fields>CreatedDate</fields>
+        <fields>CurrencyIsoCode</fields>
+        <fields>Date_of_Birth__c</fields>
+        <fields>Description__c</fields>
+        <fields>Display_Month__c</fields>
+        <fields>Email__c</fields>
+        <fields>Gender__c</fields>
+        <fields>Id</fields>
+        <fields>IsDeleted</fields>
+        <fields>LastActivityDate</fields>
+        <fields>LastModifiedById</fields>
+        <fields>LastModifiedDate</fields>
+        <fields>LastReferencedDate</fields>
+        <fields>LastViewedDate</fields>
+        <fields>Last_Name__c</fields>
+        <fields>Name</fields>
+        <fields>OwnerId</fields>
+        <fields>Percentage__c</fields>
+        <fields>Phone__c</fields>
+        <fields>RecordTypeId</fields>
+        <fields>School_Name__c</fields>
+        <fields>SystemModstamp</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>kalai@deepak.com</integrationUser>
+        <name>Outbound message1</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Country Picklist</fullName>
+        <actions>
+            <name>Update_some_filed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Employee__c.Country__c</field>
+            <operation>equals</operation>
+            <value>India</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Employee workflow</fullName>
+        <actions>
+            <name>Follow_up_the_Student_record</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Employee__c.Country__c</field>
+            <operation>equals</operation>
+            <value>India</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Gender condition</fullName>
+        <actions>
+            <name>Update_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Employee__c.Gender__c</field>
+            <operation>equals</operation>
+            <value>Male</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Name updated</fullName>
+        <actions>
+            <name>Upate_the_employee_name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Employee__c.Last_Name__c</field>
+            <operation>equals</operation>
+            <value>test</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Outbound message</fullName>
+        <actions>
+            <name>Outbound_message</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Employee__c.Gender__c</field>
+            <operation>equals</operation>
+            <value>Male</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send email</fullName>
+        <actions>
+            <name>Outbound_message1</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Employee__c.Last_Name__c</field>
+            <operation>equals</operation>
+            <value>testing</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send on task</fullName>
+        <actions>
+            <name>Task2</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Employee__c.Gender__c</field>
+            <operation>equals</operation>
+            <value>Male</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Follow_up_the_Student_record</fullName>
+        <assignedTo>kalai@deepak.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Follow up the Student record</subject>
+    </tasks>
+    <tasks>
+        <fullName>Please_follow_the_Employee_record</fullName>
+        <assignedTo>kalai@sf.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>I got country equal to india record please follow that record</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Please follow the Employee record</subject>
+    </tasks>
+    <tasks>
+        <fullName>Task2</fullName>
+        <assignedTo>kalai@sf.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>test</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Task2</subject>
+    </tasks>
+</Workflow>

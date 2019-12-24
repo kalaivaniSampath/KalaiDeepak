@@ -1,0 +1,29 @@
+<apex:page >
+    <apex:includeScript value="{!$Resource.JQuery}"/>    
+    <!-- replace below name by your flow Name -->
+  <flow:interview name="Feedback_Flow_on_contact_object" finishLocation="/{!$CurrentPage.parameters.id}">
+        <!--<apex:param name="varParameter1" value="{!$CurrentPage.parameters.sampleParameter}"/> -->
+    </flow:interview>   
+    <!-- fields in flow does not has good padding, so add some extra -->
+<style type="text/css">
+        .dataCol, .labelCol{
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+        }
+    </style> 
+    <script type="text/javascript">     
+        $(function(){
+            /* add name of fields from flow mark as none mandatory */
+            var nonMandatoryIds = ["UI_LeadSource","field2Name"];
+            
+            for(var i = 0; i < nonMandatoryIds.length ; i++){
+                removeRequiredMark(nonMandatoryIds[i]);
+            }            
+        });    
+        function removeRequiredMark(fieldId){               
+            $('select[id*='+fieldId+']').each(function() { 
+                $(this).parent().find(".requiredBlock").remove();
+            });
+         }
+    </script>
+</apex:page>

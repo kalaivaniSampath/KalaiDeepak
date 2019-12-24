@@ -1,0 +1,15 @@
+<apex:page controller="outputpanelcontroller">
+    <apex:form >
+         <apex:commandButton value="Show" action="{!show}"/>
+         <apex:commandButton value="Hide" action="{!Hide}"/>
+
+    <apex:outputPanel id="outpanel" rendered="{!flag}" ><br/>
+      welcome to outputpanel1 show<br/>
+      welcome to outputpanel2 Hide
+    
+    </apex:outputPanel>
+    </apex:form>
+
+ 
+ 
+ </apex:page>
